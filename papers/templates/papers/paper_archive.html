@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paper Archive - PaperADayHub</title>
+</head>
+
+<body>
+    <h1>Paper Archive</h1>
+    <ul>
+        {% for paper in papers %}
+        <li>
+            <a href="#">{{ paper.title }}</a> - {{ paper.date }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
